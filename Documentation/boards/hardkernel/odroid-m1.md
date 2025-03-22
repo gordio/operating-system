@@ -25,7 +25,7 @@ Once Petitboot is updated you can flash Home Assistant OS directly onto an eMMC.
 
 ## NVMe
 
-Booting directly from NVMe is not supported. The NVMe card can be used as a data disk.
+Booting directly from NVMe is not supported with petitboot (check [PR 3852][2]).
 
 ## Technical notes on boot flow
 
@@ -48,3 +48,4 @@ To show the messages on the HDMI console instead, add the console manually
 to the `cmdline.txt` file on the boot partition (e.g. `console=tty0`).
 
 [1]: http://ppa.linuxfactory.or.kr/images/petitboot/odroidm1/
+[2]: https://github.com/home-assistant/operating-system/pull/3852
